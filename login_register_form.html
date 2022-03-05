@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Login and Registration Form  </title> 
+    <link rel="stylesheet" href="src/css/signin.css">
+
+    <!-- Fontawesome CDN Link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+
+ 
+  </div>
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="images/frontimage.jpg" alt="" >
+       
+      
+        <div class="text">
+          <span class="text-1"> Welcome to our site <br> To gain more knowledge </span>
+          <span class="text-2"><h2> Let's get connected </h2> <br> <h2>To our</h2><h1> E-Learning </h1> <h2> Platform </h2></span>
+          
+        </div>
+      </div>
+      
+      
+      <div class="back">
+
+
+
+         <!--  see here image is not coming what to do!    see down-->
+                
+
+
+
+        <img src="images/backimage.jpg" alt="">
+
+
+
+
+
+        <div class="text">
+          <span class="text-1">Complete miles of journey <br> with one step</span>
+          <span class="text-2">Let's get started</span>
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Get Started</div>
+          <form action="login_action.php" method="post">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input name="email" type="text" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input name="password" type="password" placeholder="Enter your password" required>
+              </div>
+              <div class="text"><a href="#">Forgot password?</a></div>
+              <div class="button input-box">
+                
+                <input name="sub" type="submit" value="Login">
+              
+              </div>
+              
+              
+              <div class="text sign-up-text">Don't have an account? <label for="flip">Signup now</label></div>
+            
+            </div>
+        </form>
+      </div>
+        <div class="signup-form">
+          <div class="title">Signup</div>
+        <form action="signup.php" method="POST">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input name="name" type="text" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input name="email" type="email" placeholder="Enter your email" required>
+              </div>
+             
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input name="password" type="password" placeholder="Create your password" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input name="cpassword" type="password" placeholder="Conform your password" required>
+              </div>
+              <div>
+                <i class="fas fa-venus-mars"></i>
+               <label>Gender :</label>
+               <br>
+               &nbsp;&nbsp;&nbsp;
+               <input value="male" type="radio" name="gender" id="male">
+               &nbsp;<span id="male">Male</span>
+               &nbsp;&nbsp;&nbsp;&nbsp;
+               <input value="female" type="radio" name="gender" id="female">
+               &nbsp;
+               <span id="female">Female</span>
+               </div>
+              
+              <div class="button input-box">
+                <input type="submit" value="Submit" name="submit">
+              </div>
+              <div class="text sign-up-text">Already have an account? <label for="flip">Login here</label></div>
+            </div>
+
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
