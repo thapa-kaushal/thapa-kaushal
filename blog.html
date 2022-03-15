@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+   
+
+</head>
+<body>
+    <!-- navbar -->
+
+    <nav>
+       <a href="index.html" class="logo"><h1>SKILL SHARP</h1></a>
+        <div class="navigation">
+            <ul class="ul">
+                <i id="close-btn" class="fas fa-times"></i>
+                <li><a  href="index.html">Home</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="course.html">courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+          <img id="menu-btn" src="images/menu.png" alt=""  >
+        </div>
+    </nav>
+
+    <!-- Home -->
+
+    <section id="about-home">
+        <h2>Blog</h2>
+    </section>
+
+    <section id="blog-container">
+        <div class="blogs">
+            <div class="post">
+                <img src="images/blog1.jpg" alt="" >
+                <h3>Learn Web Development In The Easiest Way</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eos ullam culpa sint dolore assumenda, ea sit rerum quisquam consequuntur?</p>
+                <br>
+                <a href="">Read more</a>
+            </div>
+
+            <div class="post">
+                <img src="images/blog2.jpg" alt="" >
+                <h3>Learn Web Development In The Easiest Way</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eos ullam culpa sint dolore assumenda, ea sit rerum quisquam consequuntur?</p>
+                <br>
+                <a href="">Read more</a>
+            </div>
+
+            <div class="post">
+                <img src="images/blog3.jpg" alt="" >
+                <h3>Learn Web Development In The Easiest Way</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eos ullam culpa sint dolore assumenda, ea sit rerum quisquam consequuntur?</p>
+                <br>
+                <a href="">Read more</a>
+            </div>
+
+            <div class="post">
+                <img src="images/blog4.jpg" alt="" >
+                <h3>Learn Web Development In The Easiest Way</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eos ullam culpa sint dolore assumenda, ea sit rerum quisquam consequuntur?</p>
+                <br>
+                <a href="">Read more</a>
+            </div>
+
+            <div class="post">
+                <img src="images/blog5.jpg" alt="" >
+                <h3>Learn Web Development In The Easiest Way</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eos ullam culpa sint dolore assumenda, ea sit rerum quisquam consequuntur?</p>
+                <br>
+                <a href="">Read more</a>
+            </div>
+        </div>
+        <div class="cato">
+            <h2>Catogories</h2>
+            <hr>
+            <a href="#">Web Development</a>
+            <hr>
+            <a href="#">Web Design</a>
+            <hr>
+            <a href="#">App Development</a>
+            <hr>
+            <a href="#">Frontend Web</a>
+            <hr>
+            <a href="#">Python</a>
+            <hr>
+            <a href="#">Javascript</a>
+            <hr>
+        </div>
+    </section>
+
+   
+
+   
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investor Relation</li>
+            <li>Terms of services</li>
+        </div>
+        <div class="footer-col">
+            <h3>Features</h3>
+            <li>Manage Reputation</li>
+            <li>Power tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <li>Guides</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You can trust us. We only send promo offers,</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your email address">
+                <a href="#" class="yellow">SUBSCRIBE</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>copyright @2022 All rights reserver | This template is made by Kaushal & Manoj</p>
+            <div class="pro-links">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+          $('#menu-btn').click(function(){
+            $('.ul').addClass('active')
+        });
+        $('#close-btn').click(function() {
+            $('.ul').removeClass('active')
+        });
+    </script>
+
+</body>
+</html>

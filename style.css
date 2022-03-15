@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Playfair+Display&display=swap';
+}
+
+/* Global tags */
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35,35);
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    font-size: .9rem;
+    color: #757373;
+}
+
+h6{
+    font-size: 1.1rem;
+    color: rgb(24, 24,49);
+}
+
+/* navbar */
+
+.logo{
+    font-size: 30px;
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+}
+
+nav{
+    width: 100%;
+  display:-webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0,0.15);
+    z-index:999 ;
+}
+
+.ul{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+
+}
+
+.ul li{
+    list-style: none;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.ul li a{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.ul li a:hover{
+    color: chartreuse;
+}
+
+/* Home */
+
+#home{
+    background-image: url(images/bg1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center ;
+    padding-top: 40px ;
+}
+
+#home h2{
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    letter-spacing: 1px;
+}
+
+#home p{
+    width: 50%;
+    color: #fff;
+    font-size: 20px;
+    line-height:25px;
+}
+
+#home .btn{
+    margin-top: 30px;
+}
+
+#home a{
+    font-size: 20px;
+    padding: 13px 35px;
+    background-color: yellowgreen;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#home a.blue{
+    color: white;
+    background-color: rgb(41, 18, 173);
+}
+
+#home a.blue:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+#home a.yellow{
+    color: white;
+    background-color: rgb(214, 218, 33);
+}
+
+#home a.yellow:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Features */
+
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#features .fea-box{
+    background-color: rgb(246, 240, 240);
+    text-align: start;
+}
+
+#features .fea-box i{
+    font-size: 40px;
+    color:rgb(28, 19, 77) ;
+}
+
+#features .fea-box h3{
+    font-size: 20px ;
+    font-weight: 600;
+    color:rgb(28, 19, 77) ;
+    padding: 13px 0 7px 0;
+}
+
+#features .fea-box p{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(42, 38, 51);
+}
+
+/* Course */
+
+#course{
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+    display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  
+}
+
+#course .course-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap: 5rem;
+    margin-top: 50px;
+    padding: 100px;
+}
+
+#course .courses{
+    text-align: start;
+    background-color: whitesmoke;
+    height: 100%;
+    position: relative;
+}
+
+#course .courses img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+
+#course .courses .details{
+    padding: 15px 15px 0 15px;
+}
+
+#course .courses .details i{
+    color: #FDC93B;
+    font-size: 10px;
+}
+
+#course .courses .cost{
+    background-color: rgb(93, 94, 173);
+    color: white;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 80px;
+}
+
+/* Registration */
+
+#registration{
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(99,112,168,0.5),rgba(81,91,223,0.5)),url("images/sign1.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#registration .reminder{
+    color: white;
+}
+
+#registration .reminder h1{
+    color:white;
+}
+
+#registration .reminder .time{
+    display: flex;
+    margin-top: 30px;
+}
+
+#registration .reminder .time .date{
+    text-align: center;
+    padding: 13px 33px;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135,0.37) ;
+    border-radius: 5px;
+    margin: 0 5px 10px 5px ;
+    border: 1px solid white  rgba(255,255,255,0.18);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#registration .form{
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135,0.37);
+}
+
+#registration .form input{
+    margin: 15px 0;
+    padding: 15px 10px;
+    border:1px solid rgb(84,40,241);
+    outline: none;
+}
+
+#registration .form input::placeholder{
+    color: #413c3c;
+    font-weight:500;
+    font-size: 10px;
+}
+
+#registration .form .btn{
+    margin: 20px;
+}
+
+#registration .yellow{
+    font-size: 20px;
+    padding: 13px 35px;
+    background-color: yellowgreen;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(214, 218, 33);
+}
+
+#registration .yellow:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Faculty */
+
+#faculty {
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+}
+
+#faculty .faculty-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 2rem;
+    margin-top: 50px;
+}
+
+#faculty .faculty-box .profile{
+    background: #fafaf1;
+    padding: 30px 10px;
+}
+
+.pro-links i{
+    padding: 10px 13px;
+    border: 1px solid rgb(21,21,100);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.pro-links i:hover{
+    background-color: rgb(21,21,100);
+    color:white ;
+}
+
+/* Footer */
+
+footer{
+    padding: 8vw;
+    background-color: rgb(65, 43, 134);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .footer-col{
+    padding-bottom: 40px;
+}
+
+footer h3{
+    color: white;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer li{
+    list-style: none;
+    color:#9ba4ac ;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+footer li:hover{
+    color: white;
+}
+
+footer p{
+    color:#9ba4ac ;
+}
+
+footer .subscribe{
+    margin-top: 20px;
+}
+
+footer input{
+    width: 220px;
+    padding: 15px 12px;
+    background: rgb(46, 30, 92);
+    border: none;
+    outline: none;
+    color: white;
+}
+
+footer .subscribe a{
+    font-size: 15px;
+    padding: 12px 15px;
+    background-color: rgb(144, 156, 77);
+    font-weight: 600;
+}
+
+footer .subscribe a.yellow{
+    color: white;
+    background-color: rgb(188, 190, 85);
+}
+
+footer .subscribe a.yellow:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+footer .copyright{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+footer .copyright .pro-links i{
+    padding: 10px 13px;
+    border: 1px solid rgb(21,21,100);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+footer .copyright .pro-links i:hover{
+    background-color: #fdc93b;
+    color: #2c2c2c; 
+}
+
+footer .copyright p{
+    color: white;
+}
